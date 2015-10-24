@@ -1,0 +1,43 @@
+1. Implement atoi(const char*) function:
+
+Implement atoi(const char*) function, which takes a string representation
+of a number, parses it and converts into an integer value. Compare the result
+with standard std::atoi() function.
+
+int 
+int atoi(const char)
+int result = atoi("2015")
+2015
+
+2. Implement swap() function:
+
+This function takes two arguments (say, representing integer values) and
+swap their values. Compare the result with standard std::swap() function
+from <algorithms> header.
+
+void swap(int*, int* )
+swap(&a, &b)
+
+#include <algorithm>
+std::swap(a,b)
+
+3. Implement some function, which returns 3 different values from it.
+
+Как вернуть два значения или больше?
+int add(int*, int*)
+вернёт одно значния и одно вернёт косвенно(то есть просто изменит)
+
+4. Implement iterative function for Fibonacci calculation.
+Нужно сделать итеративный алгоритм. 
+fact(){
+  N*fact()
+}
+
+fact(){
+while(){
+...
+}
+}
+
+5. Implement iterative function for Factorial calculation.
+
