@@ -1,0 +1,42 @@
+/*#include <cstdio>
+
+int global_variable = 1;
+
+int main(int argc, char** argv) {  // main block
+  printf("[Lesson 1]: Visibility scope 2\n");
+
+  bool boolean_expression = true;
+  int local_variable = 2;
+  
+  if (boolean_expression) {  // block 1
+    int local_variable_1 = 3;
+    printf("[Block    1]: Global variable = %i, Local variable = %i\n", global_variable, local_variable);
+    printf("[Block    1]: Global variable = %i, Local variable = %i\n", global_variable, local_variable_1);
+  }  // end block 1
+
+  printf("[Main Block]: Global variable = %i, Local variable = %i\n", global_variable, local_variable);
+
+  printf("[Lesson 1]: Visibility scope 2 [END]\n\n");
+  return 0;
+}  // end main block
+*/
+#include <cstdio>
+
+int global_variable = 1;
+
+int main(int argc, char** argv) {  // main block
+  printf("[Lesson 1]: Visibility scope 2\n");
+
+  bool boolean_expression = true;
+  int local_variable = 2;
+  
+  if (boolean_expression) {  // block 1
+    int local_variable_2 = 3;
+    printf("[Block    1]: Global variable = %i, Local variable = %i, Local variable_2 = %i\n", global_variable, local_variable, local_variable_2);
+  }  // end block 1
+
+  printf("[Main Block]: Global variable = %i, Local variable = %i\n", global_variable, local_variable);
+
+  printf("[Lesson 1]: Visibility scope 2 [END]\n\n");
+  return 0;
+}  // end main block
