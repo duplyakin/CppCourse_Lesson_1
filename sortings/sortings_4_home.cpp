@@ -120,17 +120,8 @@ void unitTest() {
 
     DBG("%i", size);
 
-    //INF("array_before_sorting:");
-    //print(array1, size);
     sort::quicksort(array1, size);
-    //INF("array_after_random_sorting:");
-    //print(array1, size);
-
-    //INF("array_before_sorting:");
-    //print(array2, size);
     sort::quicksortRand(array2, size);
-    //INF("array_after_random_sorting:");
-    //print(array2, size);
 
     for (int i=0; i < size; ++i) {
       if (array1[i] != array2[i]) {
